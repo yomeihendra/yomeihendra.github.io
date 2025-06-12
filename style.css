@@ -1,0 +1,141 @@
+/* Reset & basic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #f9fbfc;
+  color: #0b1a4d;
+  line-height: 1.6;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Header Hero Section */
+.hero {
+  background: linear-gradient(135deg, #004080, #3385ff);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.hero-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.hero-content .btn {
+  background-color: #00264d;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.hero-content .btn:hover {
+  background-color: #0052cc;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  gap: 30px;
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+}
+.profile-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #004080;
+}
+.about h3 {
+  color: #003366;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.about p {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+}
+
+/* Projects Section */
+.projects {
+  background-color: #e6f0ff;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  border-radius: 15px;
+}
+.projects h3 {
+  color: #003366;
+  font-size: 1.9rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.projects ul {
+  list-style-type: none;
+}
+.projects li {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  padding: 20px;
+  margin-bottom: 15px;
+  color: #004080;
+  font-weight: 600;
+}
+.projects li strong {
+  color: #00264d;
+}
+
+/* Links Section */
+.links {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.links a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+.links a:hover {
+  color: #0052cc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #00264d;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about p {
+    max-width: 100%;
+  }
+}
